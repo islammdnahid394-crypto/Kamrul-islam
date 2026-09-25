@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Kamrul Islam Nahid - Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border: #334155;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --subtext: #475569;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Hind Siliguri', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 10%;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background-color: var(--bg);
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .theme-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 10% 2rem;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: var(--subtext);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .bio-quote {
+      font-style: italic;
+      color: var(--accent);
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 10%;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    .contact-btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--subtext);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MD Kamrul Islam Nahid</div>
+    <nav>
+      <a href="#about">পরিচয়</a>
+      <a href="#focus">মূল লক্ষ্য</a>
+      <a href="#contact">যোগাযোগ</a>
+      <button class="theme-btn" onclick="toggleTheme()">থিম পরিবর্তন</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Profile Image -->
+    <img src="https://drive.google.com/file/d/1Z9j7w1ZYWqefuU13724aFKHLL7ku8cM_/view?usp=drivesdk" alt="MD Kamrul Islam Nahid" class="profile-img">
+    <h1>MD Kamrul Islam Nahid</h1>
+    <p>শিক্ষক ও সাংবাদিক | শিক্ষার্থীদের অধিকার ও কল্যাণে নিয়োজিত</p>
+    
+    <div class="bio-quote">
+      "আমি বিদ্রোহী রণক্লান্ত, <br> আমি সেই দিন হব শান্ত..." 🔥
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about" class="card">
+      <h2>আমার পরিচয়</h2>
+      <p>আমি পেশায় একজন শিক্ষক ও সাংবাদিক। সততা ও বস্তুনিষ্ঠতার সাথে সমাজে সঠিক তথ্য তুলে ধরা এবং শিক্ষার আলো ছড়িয়ে দেওয়ার কাজে আমি নিয়োজিত। সমাজ ও শিক্ষাব্যবস্থায় ইতিবাচক পরিবর্তনের লক্ষ্যে আমি প্রতিনিয়ত কাজ করে যাচ্ছি।</p>
+    </section>
+
+    <section id="focus" class="card">
+      <h2>শিক্ষার্থীদের কল্যাণে কাজ</h2>
+      <p>শিক্ষার্থীরাই আগামী দিনের ভবিষ্যৎ। তাদের অধিকার রক্ষা, পড়াশোনার উপযোগী পরিবেশ তৈরি করা এবং যেকোনো ধরনের প্রয়োজনে তাদের পাশে দাঁড়ানো আমার অন্যতম প্রধান কাজ ও সামাজিক দায়িত্ব।</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>যোগাযোগ করুন</h2>
+      <p>যেকোনো বিষয় বা পরামর্শের জন্য সরাসরি যোগাযোগের লিংকসমূহ:</p>
+      <a href="https://github.com/islammdnahid394-crypto" class="contact-btn" target="_blank">GitHub Profile</a>
+      <a href="https://www.facebook.com/share/1V6jmasL18/" class="contact-btn" target="_blank" style="margin-left: 10px; background-color: #1877f2;">Facebook Profile</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 MD Kamrul Islam Nahid. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = body || document.body;
+      if (body.getAttribute('data-theme') === 'light') {
+        body.removeAttribute('data-theme');
+      } else {
+        body.setAttribute('data-theme', 'light');
+      }
+    }
+  </script>
+</body>
+</html>
